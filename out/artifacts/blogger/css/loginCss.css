@@ -1,0 +1,56 @@
+html,body{
+    height:100%;
+    background: linear-gradient(#fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.form-div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 300px;
+}
+.form-div-show{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+    text-align: center;
+}
+.textShow{
+    font-size: 15px;
+    color: orangered;
+}
+.show{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    font-family:  "Lucida Calligraphy";
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    width: 25%;
+    height: 60%;
+    position: absolute;
+}
+.input-item{
+    height:30px;
+    width:80%;
+    border-radius: 15px;
+}
+#btn{
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: palegoldenrod;
+    font-size: 20px;//字体大小
+    padding: 1%;
+    width: 150px;
+    border-radius: 10px;
+}
+.register,.msg{
+    font-size: 15px;
+}
+.header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <script src="../js/jQuery-3.4.1.js" type="text/javascript" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" charset="UTF-8">
+    <link rel="stylesheet" href="../css/personalData.css" type="text/css" charset="UTF-8">
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+    <div class="container" style="background-color: #f9f2f4 ">
+        <!--   标题栏     -->
+        <div class="row" style="height: 80px" >
+            <div class="col-lg-4">
+                <img src="../img/zl.png" style="height: 40px" type="text/png" class="img-circle">
+            </div>
+            <div class="col-lg-4">
+                <input type="text" class="form-control" placeholder="搜索" id="search">
+            </div>
+            <div class="col-lg-4">
+                <img src="../img/sz.png" style="height: 40px" type="text/png" class="img-circle">
+            </div>
+        </div>
+        <!--   左边的选择栏     -->
+        <div class="row" style="height: 300px" >
+            <div class="col-xs-1" style="width: 5px"></div>
+            <div class="col-lg-2" >
+                <ul class="list-group">
+                    <li class="list-group-item">个人资料</li>
+                    <li class="list-group-item">账号设置</li>
+                    <li class="list-group-item">我的收藏</li>
+                    <li class="list-group-item">游览记录</li>
+                </ul>
+            </div>
+            <div class="col-xs-1"  style="width: 5px"></div>
+            <!--   右边的展示栏     -->
+           <div class="col-lg-8" style="background-color: #e7e7e7 ">
+               <!--   展示头像和名称     -->
+               <div class="row showPersonal" style="height: 200px" >
+                   <div class="col-lg-2 showPersonalPic">
+                       <img  id="userPic" src="../img/zl.png" style="height: 80px" type="text/png" class="img-circle">
+                   </div>
+                   <div class="col-lg-9 showPersonalName">
+                       <div id="username" style="">
+                           <div id="usernameShow">11111111111</div>
+                           <div id="userShowPic">
+                               <img src="../img/a.png" style="height: 40px" type="text/png" class="img-rounded">
+                               <img src="../img/b.png" style="height: 40px" type="text/png" class="img-rounded">
+                               <img src="../img/c.png" style="height: 40px" type="text/png" class="img-rounded">
+                               <img src="../img/d.png" style="height: 40px" type="text/png" class="img-rounded">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="btn-group btn-group-justified">
+                       <a href="homePages.html" class="btn btn-primary">Apple</a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

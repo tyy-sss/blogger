@@ -1,0 +1,65 @@
+html,body{
+    height:100%;
+    background: linear-gradient(#fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.show{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    align-items: center;
+    font-family:  "Lucida Calligraphy";
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    width: 45%;
+    height: 68%;
+    position: absolute;
+}
+.form-div{
+    margin-top: 20px;
+    height: 60px;
+    width: 500px;
+    display: flex;
+}
+.input-item {
+    width: 230px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#form-div-captcha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.span-show{
+    margin-top: 10px;
+    font-size: 13px;
+    color: orangered;
+}
+.form-div-problem{
+    margin-left: 340px;
+}
+.p{
+    text-align: end;
+    width:100px;
+}
+.register{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: palegoldenrod;
+    font-size: 20px;//字体大小
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+#captcha{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+

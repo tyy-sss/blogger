@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="../css/loginCss.css" type="text/css">
+</head>
+<body>
+<div class="show">
+    <h1 class="header">登录</h1>
+    <div class="form-div">账号:<input  id="email" type="text" placeholder="账号(手机号或者邮箱)" class="input-item">
+    </div>
+    <div class="form-div-show"><span id="emailProblem"class="textShow"></span>
+    </div>
+    <div class="form-div">密码:<input  id="password" type="password"placeholder="密码" class="input-item">
+    </div>
+    <div class="form-div-show"><span id="passwordProblem"class="textShow"></span>
+    </div>
+    <div class="form-div"><input id='btn' class="btn" type="submit" value="登录">
+    </div>
+    <div class="form-div">
+        没有账号？<a href="register.html" target="_blank" class="register">注册</a>
+        <div><a href="forgetPassword.html" target="_blank" class="forget">忘记密码</a></div>
+    </div>
+</div>
+    <script src="../js/axios-0.18.0.js"></script>
+    <script>
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var btn=document.getElementById("btn");
+            var emailNumber=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+            email.onblur=function (){
+                emailShow();
+            }
+            btn.onclick=function (){
+                var formData={
+                    email:"",
+                    password:""
+                };
+                formData.email=email.value;
+                formData.password=password.value;
+                axios({
+                    method: "post",
+                    url: "http://localhost:8080/blogger/loginServlet",
+                    data:formData
+                }).then(function (resp) {
+                    if(resp.data==false){
+                        document.getElementById("passwordProblem").innerHTML="密码输入错误";
+                    }else{
+                        document.getElementById("passwordProblem").innerHTML="";
+                        alert("登录成功")
+                    }
+                });
+                emailShow();
+            }
+            function emailShow(){
+                if(emailNumber.test(email.value)==false){
+                    document.getElementById("emailProblem").innerHTML="请输入正确的邮箱";
+                }else{
+                    document.getElementById("emailProblem").innerHTML="";
+                    axios({
+                        method: "post",
+                        url: "http://localhost:8080/blogger/selectUserServlet",
+                        data:{email:email.value}
+                    }).then(function (resp) {
+                        if(resp.data==false){
+                            document.getElementById("emailProblem").innerHTML="账号不存在";
+                        }else{
+                            document.getElementById("emailProblem").innerHTML="";
+                        }
+                    });
+                }
+            }
+    </script>
+</body>
+</html>

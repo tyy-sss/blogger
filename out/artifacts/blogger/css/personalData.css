@@ -1,0 +1,28 @@
+body{
+    background-color: #e4b9b9;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 30px;
+}
+.showPersonal{
+    display: flex;
+    align-items: center;
+}
+.showPersonalPic{
+    display: flex;
+    justify-content: center;
+}
+.showPersonalName{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.userShowPic{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}

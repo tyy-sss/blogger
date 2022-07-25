@@ -1,0 +1,28 @@
+2022-07-20 09:07:58.211 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-07-20 09:07:58.275 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 09:07:58.275 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 09:07:58.275 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 09:07:58.275 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 09:07:58.447 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-07-20 09:07:58.712 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 1020520290.
+2022-07-20 09:07:58.712 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3cd3e762]
+2022-07-20 09:07:58.728 [main] DEBUG dao.UserMapper.select - ==>  Preparing: SELECT * FROM user WHERE email = ? AND password = ?
+2022-07-20 09:07:58.759 [main] DEBUG dao.UserMapper.select - ==> Parameters: 1(String), 1(String)
+2022-07-20 09:07:58.790 [main] DEBUG dao.UserMapper.select - <==      Total: 0
+2022-07-20 09:07:58.790 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3cd3e762]
+2022-07-20 09:07:58.790 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3cd3e762]
+2022-07-20 09:07:58.790 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Returned connection 1020520290 to pool.
+2022-07-20 11:34:18.211 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-07-20 11:34:18.246 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 11:34:18.246 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 11:34:18.246 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 11:34:18.246 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-07-20 11:34:18.406 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-07-20 11:34:18.676 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 1217467887.
+2022-07-20 11:34:18.676 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@489115ef]
+2022-07-20 11:34:18.676 [main] DEBUG dao.UserMapper.select - ==>  Preparing: SELECT * FROM user WHERE email = ? AND password = ?
+2022-07-20 11:34:18.726 [main] DEBUG dao.UserMapper.select - ==> Parameters: 1(String), 1(String)
+2022-07-20 11:34:18.756 [main] DEBUG dao.UserMapper.select - <==      Total: 0
+2022-07-20 11:34:18.764 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@489115ef]
+2022-07-20 11:34:18.764 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@489115ef]
+2022-07-20 11:34:18.764 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Returned connection 1217467887 to pool.
